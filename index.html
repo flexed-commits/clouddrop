@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudDrop | Simple File Sharing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="upload-container">
+        <h1>CloudDrop</h1>
+        <p>Upload any file and get a shareable link.</p>
+
+        <div class="drop-zone" id="dropZone">
+            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+            <input type="file" name="myFile" id="fileInput" class="drop-zone__input">
+        </div>
+
+        <button id="submitBtn" class="btn-submit">Upload & Generate Link</button>
+
+        <div id="resultArea" class="result-container hidden">
+            <p>Your file is ready:</p>
+            <div class="link-box">
+                <input type="text" id="shareLink" readonly>
+                <button id="copyBtn">Copy</button>
+            </div>
+            <p class="expiry-note">Files are stored for 28 days.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
